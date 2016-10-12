@@ -1,4 +1,4 @@
-# Corkscrew, by Fresh Tilled Soil
+# Corkscrew, A Style Guide Framework
 
 ### Description
 
@@ -127,7 +127,7 @@ If you need extra functionality in the framework itself (outside of the stylegui
 
 Each element has a JSON output version routed to {baseURL}/{section}/{element}/json.
 
-For example, JSON for buttons can be accessed via: http://localhost:8080/components/buttons/json
+For example, JSON for buttons can be accessed via: http://localhost:8000/components/buttons/json
 
 ## Contributing
 
@@ -138,8 +138,6 @@ For example, JSON for buttons can be accessed via: http://localhost:8080/compone
 5. Submit a pull request
 
 ## Credits
-
-Corkscrew is an Open Source style guide framework created by [Fresh Tilled Soil](http://freshtilledsoil.com), an experience design agency out of Boston. We use this on all of our projects and we welcome you to  do the same!
 
 - [Tim Wright](http://github.com/timwright12) ( [@csskarma](http://twitter.com/csskarma) )
 
