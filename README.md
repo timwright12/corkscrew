@@ -63,19 +63,19 @@ Let's step through what they do:
 
 The main guts of Corkscrew live in the /corkscrew directory. You probably won't need to go in there often unless you're customizing the framework itself (not the project files/style guide modules).
 
-*assets/css/corkscrew.css*
+`assets/css/corkscrew.css`
 
 This is the main CSS for the framework, you probably won't need to edit this. All the SCSS files live in the sibling directory, `stylesheets`.
 
-*assets/css/corkscrew-extend.css*
+`assets/css/corkscrew-extend.css`
 
 This is a CSS file that is hooked into Corkscrew and it is where you would put small, project-base, modifications to the look and feel of the framework itself. This is good to use if your changes probably shouldn't be added into Core.
 
-*assets/js/corkscrew.js*
+`assets/js/corkscrew.js`
 
 This file hosts all the JavaScript needed to run Corkscrew (there isn't much).
 
-*assets/js/corkscrew-extend.js*
+`assets/js/corkscrew-extend.js`
 
 If you need to add onto Corkscrew's functionality with JavaScript, this is where you would do that.
 
@@ -83,15 +83,15 @@ If you need to add onto Corkscrew's functionality with JavaScript, this is where
 
 The `src` directory is where all your style guide elements and templates live. Corkscrew looks through this directory to assemble your style guide. The URL structure is based on the folders present in  here, so `/base` will render at `<url>/base` and so on. Inside each subdirectory there is an `_index.twig` file, these are required (unless you want to update the routing in `index.php`). They are template includes, you can have as many includes as you want inside these files (or don't use any, it's whatever you want).
 
-*_corkscrew-api.twig*
+`_corkscrew-api.twig`
 
 This is a JSON template for the API.
 
-*_corkscrew-layout.twig*
+`_corkscrew-layout.twig`
 
 This is the main layout template for the framework, it also contains your configuration options at the top. This includes: Client Name, misc. options, any css files you need to include, any JavaScript files, and also the color palette. Crack it open and have a look.
 
-*_corkscrew-section.twig*
+`_corkscrew-section.twig`
 
 This is the template file for a sub section inside a page.
 
@@ -115,11 +115,11 @@ This is where Corkscrew ties itself together. The templating and routing is done
 
 There are some extra hooks built into Corkscrew to help you cleanly customize the framework code to fit your needs while still allowing upgrades to the core framework.
 
-/assets/css/corkscrew-extend.css
+`/assets/css/corkscrew-extend.css`
 
 If you need to customize the framework for your organization (or client), you would do that in corkscrew-extend.css. It is currently branded for Fresh Tilled Soil, you're welcome to keep it that way, but you're also free to rebrand it.
 
-/assets/js/corkscrew-extend.js
+`/assets/js/corkscrew-extend.js`
 
 If you need extra functionality in the framework itself (outside of the styleguide), you would do so in corkscrew-extend.js. We don't recommend using corkscrew.js for customizing the interface, which is the main Javascript file for the application, because it could affect upgrades.
 
